@@ -16,14 +16,11 @@ export default function App() {
 		<div className="flex min-h-dvh flex-col">
 			<Navbar />
 			<section id="hero" className="relative isolate">
-				<video
+				<img
 					className="absolute inset-0 h-full w-full object-cover"
-					src="/hero_video.mp4"
-					autoPlay
-					muted
-					loop
-					playsInline
-					preload="metadata"
+					src="/Hero.jpg"
+					alt="Conference hero background"
+					loading="eager"
 				/>
 				<div className="absolute inset-0 bg-primary/40" />
 				<div className="relative mx-auto max-w-6xl px-6">
