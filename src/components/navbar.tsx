@@ -39,6 +39,7 @@ import {
     menu?: MenuItem[];
   }
   
+
   const Navbar = ({
     logo = {
       url: "https://www.math.nus.edu.sg/cqf/",
@@ -55,7 +56,6 @@ import {
     return (
       <section className="sticky top-0 z-50 border-b bg-white">
         <div className="mx-auto flex h-20 max-w-6xl items-center justify-center px-6">
-          {/* Desktop Menu */}
           <nav className="hidden items-center lg:flex">
             <div className="flex items-center gap-6">
               {/* Logo */}
