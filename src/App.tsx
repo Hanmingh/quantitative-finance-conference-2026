@@ -4,8 +4,6 @@ import { Button } from '@/components/ui/button'
 import {
 	Card,
 	CardContent,
-	CardHeader,
-	CardTitle,
 } from '@/components/ui/card'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { keynotes } from '@/data/keynotes'
@@ -26,11 +24,10 @@ export default function App() {
 				<div className="relative mx-auto max-w-6xl px-6">
 					<div className="flex min-h-[360px] items-center sm:min-h-[480px] lg:min-h-[560px]">
 						<div className="mx-auto max-w-3xl text-center text-white">
-							<h1 className="text-3xl font-bold md:text-4xl lg:text-5xl">Quantitative Finance Conference 2026</h1>
+							<h1 className="text-3xl font-bold md:text-4xl lg:text-5xl">Quantitative&nbsp;Finance&nbsp;Conference&nbsp;2026</h1>
 							<p className="mt-3 text-base md:text-lg lg:text-xl">10–12 June 2026 · Singapore</p>
 							<div className="mt-5 flex flex-wrap items-center justify-center gap-4 text-sm/relaxed opacity-95">
-								<span className="inline-flex items-center gap-2"><CalendarDays className="h-4 w-4" /> 10–12 June</span>
-								<span className="inline-flex items-center gap-2"><Landmark className="h-4 w-4" /> National University of Singapore, Center for Quantitative Finance</span>
+								<span className="inline-flex items-center gap-2"><Landmark className="h-4 w-4" />Center for Quantitative Finance, National University of Singapore</span>
 							</div>
 							<div className="mt-8">
 								<Button size="lg" className="rounded-full bg-accent text-accent-foreground hover:bg-accent/90">Register Now</Button>
@@ -41,90 +38,11 @@ export default function App() {
 			</section>
 
 			<main className="flex-1">
-				{/* About */}
-				<section id="about" className="py-12 md:py-16 lg:py-20">
-					<div className="mx-auto grid max-w-6xl items-start gap-10 px-6">
-						<div className="space-y-5">
-							<h2 className="text-2xl font-bold md:text-3xl lg:text-4xl">About the Conference</h2>
-							<div className="h-1 w-16 rounded bg-accent md:w-20" />
-							<p className="text-muted-foreground md:text-lg lg:text-xl">
-								The Quantitative Finance Conference 2026 is a three-day conference from 10-12 June 2026 at NUS Singapore and promotes the latest features, trends and developments in the field. Its aim is to exchange ideas and to bring together and foster collaboration between distinguished and experienced speakers and young researchers.
-							</p>
-							<div className="rounded-lg border border-accent/30 bg-accent/5 p-4 text-sm text-muted-foreground">
-								Detailed program, speakers, and sessions TBA.
-							</div>
-							<ul className="mt-4 grid gap-3 text-sm text-muted-foreground sm:grid-cols-2">
-								<li className="inline-flex items-start gap-2"><CalendarDays className="mt-0.5 h-4 w-4 text-accent" /> 10–12 June 2026</li>
-								<li className="inline-flex items-start gap-2"><MapPin className="mt-0.5 h-4 w-4 text-accent" /> Auditorium 1 (UT-AUD1), University Town</li>
-								<li className="inline-flex items-start gap-2"><Landmark className="mt-0.5 h-4 w-4 text-accent" /> National University of Singapore</li>
-								<li className="inline-flex items-start gap-2"><Clock className="mt-0.5 h-4 w-4 text-accent" /> Daily agenda with keynotes and invited sessions</li>
-							</ul>
-						</div>
-					</div>
-				</section>
-
-				<section className="py-12 md:py-16 lg:py-20">
-					<div className="mx-auto max-w-6xl px-6">
-						<div className="space-y-4">
-							<h2 className="text-2xl font-bold md:text-3xl lg:text-4xl">Schedule</h2>
-							<p className="text-muted-foreground md:text-lg lg:text-xl">Three days of keynotes and invited sessions.</p>
-						</div>
-						<div className="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-							<Card>
-								<CardHeader>
-									<CardTitle className="text-lg">10 June</CardTitle>
-								</CardHeader>
-								<CardContent className="grid gap-3">
-									<TimelineRow time="09:50" title="Opening remarks" />
-									<TimelineRow time="10:00" title="Keynote (1 hour)" />
-									<TimelineRow title="Tea break" />
-									<TimelineRow title="Invited sessions (parallel)" />
-									<TimelineRow title="Lunch" />
-									<TimelineRow title="Keynote (1 hour)" />
-									<TimelineRow title="Tea break" />
-									<TimelineRow title="Invited sessions (parallel)" />
-									<TimelineRow time="18:00" title="Banquet" />
-								</CardContent>
-							</Card>
-
-							<Card>
-								<CardHeader>
-									<CardTitle className="text-lg">11 June</CardTitle>
-								</CardHeader>
-								<CardContent className="grid gap-3">
-									<TimelineRow time="10:00" title="Keynote" />
-									<TimelineRow title="Tea break" />
-									<TimelineRow title="Invited sessions" />
-									<TimelineRow title="Afternoon free discussion" />
-								</CardContent>
-							</Card>
-
-							<Card>
-								<CardHeader>
-									<CardTitle className="text-lg">12 June</CardTitle>
-								</CardHeader>
-								<CardContent className="grid gap-3">
-									<TimelineRow time="09:50" title="Opening recap" />
-									<TimelineRow title="Keynote (1 hour)" />
-									<TimelineRow title="Tea break" />
-									<TimelineRow title="Invited sessions (parallel)" />
-									<TimelineRow title="Lunch" />
-									<TimelineRow title="Keynote (1 hour)" />
-									<TimelineRow title="Tea break" />
-									<TimelineRow title="Invited sessions (parallel)" />
-									<TimelineRow time="17:00" title="Closing" />
-								</CardContent>
-							</Card>
-						</div>
-					</div>
-				</section>
-
 				<section id="speakers" className="bg-white py-12 md:py-16 lg:py-20">
 					<div className="mx-auto max-w-6xl px-6">
 						<div className="space-y-4">
-							<h2 className="text-2xl font-bold md:text-3xl lg:text-4xl">Speakers</h2>
-							<div className="h-1 w-16 rounded bg-accent md:w-20" />
-							<p className="text-muted-foreground md:text-lg lg:text-xl">Keynote and invited speakers.</p>
+							<h2 className="text-2xl font-bold md:text-3xl lg:text-4xl">Keynotes</h2>
+							<div className="h-1 w-16 rounded bg-accent md:w-20 mx-auto" />
 						</div>
 						<div className="mt-8 grid gap-6 sm:grid-cols-2 md:grid-cols-3">
 							{keynotes.map((k) => (
@@ -134,11 +52,51 @@ export default function App() {
 					</div>
 				</section>
 
+				{/* About */}
+				<section id="about" className="py-12 md:py-16 lg:py-20">
+					<div className="mx-auto grid max-w-6xl items-start gap-10 px-6">
+						<div className="space-y-5">
+							<h2 className="text-2xl font-bold md:text-3xl lg:text-4xl">About the Conference</h2>
+							<div className="h-1 w-16 rounded bg-accent md:w-20 mx-auto" />
+						<div className="mx-auto mt-4 max-w-3xl space-y-4 text-sm leading-relaxed text-muted-foreground md:text-base">
+							<p>On behalf of the Centre for Quantitative Finance (CQF) at the National University of Singapore (NUS), we are delighted to invite you to join us at the QF Annual Conference 2026, to be held from 10–12 June 2026 in Singapore.</p>
+							<p>The QF Annual Conference is the flagship academic event of CQF, bringing together leading researchers, policymakers, and industry practitioners in quantitative finance, data science, and emerging technologies. The conference serves as a vibrant platform for advancing dialogue between theory and practice, fostering collaboration, and showcasing cutting-edge developments in financial econometrics, risk analytics, computational methods, fintech innovation, and quantum finance.</p>
+							<p>The Centre for Quantitative Finance (CQF) at NUS is dedicated to promoting interdisciplinary research and education at the intersection of mathematics, data science, and finance. We work closely with global academic and industry partners to advance innovation, develop frontier methodologies, and cultivate the next generation of thought leaders in quantitative finance.</p>
+							<p>This year’s conference will be integrated into the broader QF Thematic Program (1–19 June 2026), sponsored by the NUS Institute for Mathematical Sciences (IMS). The program features a series of tutorials, workshops, and collaborative research sessions, offering extended opportunities for in-depth academic exchange and networking. More information is available on the program website: https://ims.nus.edu.sg/events/qf_2026/.</p>
+							<p>We warmly welcome your participation in this exciting event and look forward to your contribution to the continuing success of the QF Annual Conference.</p>
+						</div>
+
+						<ul className="mx-auto mt-6 grid max-w-3xl grid-cols-1 gap-3 text-sm text-muted-foreground sm:grid-cols-3 md:gap-4">
+							<li className="flex items-start gap-2"><CalendarDays className="mt-0.5 h-4 w-4 text-accent" /> 10–12 June 2026</li>
+							<li className="flex items-start gap-2"><MapPin className="mt-0.5 h-4 w-4 text-accent" /> Auditorium 1 (UT-AUD1), University Town</li>
+							<li className="flex items-start gap-2"><Landmark className="mt-0.5 h-4 w-4 text-accent" /> Center for Quantitative Finance, National University of Singapore</li>
+						</ul>
+						</div>
+					</div>
+				</section>
+
+				<section className="py-12 md:py-16 lg:py-20">
+					<div className="mx-auto max-w-3xl px-6 text-center">
+						<h2 className="text-2xl font-bold md:text-3xl lg:text-4xl">Program</h2>
+						<p className="mt-2 text-muted-foreground md:text-lg">For specific details, visit the official event page.</p>
+						<div className="mt-6">
+							<a
+								href="https://ims.nus.edu.sg/events/qf_2026/"
+								target="_blank"
+								rel="noreferrer"
+								className="inline-flex items-center rounded-full bg-accent px-5 py-2.5 text-sm font-medium text-accent-foreground hover:bg-accent/90"
+							>
+								View full program
+							</a>
+						</div>
+					</div>
+				</section>
+
 				{/* Venue & Map */}
 				<section id="venue" className="py-12 md:py-16 lg:py-20">
 					<div className="mx-auto max-w-6xl px-6">
 						<h2 className="text-2xl font-bold md:text-3xl lg:text-4xl">Venue & Map</h2>
-						<div className="h-1 w-16 rounded bg-accent md:w-20" />
+						<div className="h-1 w-16 rounded bg-accent md:w-20 mx-auto mt-2" />
 						<Card className="mt-6 shadow-sm">
 							<CardContent className="p-0">
 								<div className="relative w-full pb-[56.25%]">
@@ -152,7 +110,7 @@ export default function App() {
 									/>
 								</div>
 								<div className="flex justify-between p-4 text-sm text-muted-foreground">
-      <div>
+					      			<div className="text-left">
 										<div>Auditorium 1 (UT-AUD1), University Town</div>
 										<div>1 Create Wy, Level 1 Town Plaza, Singapore 138602</div>
 									</div>
@@ -163,8 +121,8 @@ export default function App() {
 										className="inline-flex items-center rounded-full bg-accent px-4 py-2 text-sm font-medium text-accent-foreground hover:bg-accent/90"
 									>
 										Open in Google Maps
-        </a>
-      </div>
+        							</a>
+      							</div>
 							</CardContent>
 						</Card>
 					</div>
@@ -185,29 +143,36 @@ export default function App() {
 	)
 }
 
-function TimelineRow({ time, title }: { time?: string; title: string }) {
-	return (
-		<div className="flex items-start gap-3 p-2">
-			<Clock className={`mt-0.5 h-4 w-4 text-muted-foreground ${!time ? 'invisible' : ''}`} />
-			<div>
-				{time ? <div className="text-xs uppercase text-muted-foreground">{time}</div> : null}
-				<div className="text-sm">{title}</div>
-			</div>
-		</div>
-	)
-}
+// Removed deprecated TimelineRow
 
 function Speaker({ name, role, initials, siteUrl, bio, imageSrc }: { name: string; role: string; initials: string; siteUrl?: string; bio?: string; imageSrc?: string }) {
     return (
         <div className="flex h-full flex-col items-center gap-3 rounded-lg border p-4 text-center">
-            <Avatar className="h-24 w-24">
+            <Avatar className="h-36 w-36 md:h-40 md:w-40">
                 <AvatarImage src={imageSrc || ""} alt={name} />
                 <AvatarFallback>{initials}</AvatarFallback>
             </Avatar>
             <div className="space-y-1">
                 <div className="text-base font-semibold">{name}</div>
                 <div className="text-sm text-muted-foreground">{role}</div>
-                {bio ? <p className="text-sm text-muted-foreground">{bio}</p> : null}
+						{bio ? (
+							<p className="text-sm text-muted-foreground">
+								{(() => {
+									const phrase = 'Bachelier Finance Society'
+									const url = 'https://www.bachelierfinance.org/'
+									const parts = bio.split(phrase)
+									if (parts.length === 1) return bio
+									return parts.map((part, idx) => (
+										idx < parts.length - 1 ? (
+											<span key={idx}>
+												{part}
+												<a href={url} target="_blank" rel="noreferrer" className="text-accent hover:underline">{phrase}</a>
+											</span>
+										) : part
+									))
+								})()}
+							</p>
+						) : null}
                 {siteUrl ? (
                     <a href={siteUrl} target="_blank" rel="noreferrer" className="text-sm font-medium text-accent hover:underline">
                         Personal site
