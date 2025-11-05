@@ -75,7 +75,7 @@ export default function App() {
 					</div>
 				</section>
 
-				<section className="py-12 md:py-16 lg:py-20">
+				<section id="program" className="py-12 md:py-16 lg:py-20">
 					<div className="mx-auto max-w-3xl px-6 text-center">
 						<h2 className="text-2xl font-bold md:text-3xl lg:text-4xl">Program</h2>
 						<p className="mt-2 text-muted-foreground md:text-lg">For specific details, visit the official event page.</p>

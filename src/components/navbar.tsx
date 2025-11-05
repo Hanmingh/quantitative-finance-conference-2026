@@ -48,8 +48,9 @@ import {
     },
     menu = [
       { title: "Home", url: "#hero" },
+      { title: "Keynotes", url: "#speakers" },
       { title: "About", url: "#about" },
-      { title: "Speakers", url: "#speakers" },
+      { title: "Program", url: "#program" },
       { title: "Venue", url: "#venue" },
     ],
   }: NavbarProps) => {
