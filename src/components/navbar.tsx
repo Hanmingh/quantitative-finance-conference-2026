@@ -47,11 +47,11 @@ import {
       alt: "Center for Quantitative Finance",
     },
     menu = [
-      { title: "Home", url: "#hero" },
-      { title: "Keynotes", url: "#speakers" },
-      { title: "About", url: "#about" },
-      { title: "Program", url: "#program" },
-      { title: "Venue", url: "#venue" },
+      { title: "Home", url: "/" },
+      { title: "Keynotes", url: "/keynotes" },
+      { title: "About", url: "/about" },
+      { title: "Program", url: "/program" },
+      { title: "Venue", url: "/venue" },
     ],
   }: NavbarProps) => {
     return (
