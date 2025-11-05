@@ -1,5 +1,5 @@
 import './App.css'
-import { CalendarDays, MapPin, Landmark, Clock } from 'lucide-react'
+import { CalendarDays, MapPin, Landmark } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import {
 	Card,
