@@ -15,21 +15,21 @@ export default function App() {
 			<Navbar />
 			<section id="hero" className="relative isolate">
 				<img
-					className="absolute inset-0 h-full w-full object-cover"
+					className="absolute inset-0 h-full w-full object-cover object-[50%_30%] sm:object-center"
 					src="/Hero.jpg"
 					alt="Conference hero background"
 					loading="eager"
 				/>
-				<div className="absolute inset-0 bg-primary/40" />
+				<div className="absolute inset-0 bg-primary/50 sm:bg-primary/40" />
 				<div className="relative mx-auto max-w-6xl px-6">
-					<div className="flex min-h-[360px] items-center sm:min-h-[480px] lg:min-h-[560px]">
-						<div className="mx-auto max-w-3xl text-center text-white">
-							<h1 className="text-3xl font-bold md:text-4xl lg:text-5xl">Quantitative&nbsp;Finance&nbsp;Conference&nbsp;2026</h1>
-							<p className="mt-3 text-base md:text-lg lg:text-xl">10–12 June 2026 · Singapore</p>
-							<div className="mt-5 flex flex-wrap items-center justify-center gap-4 text-sm/relaxed opacity-95">
-								<span className="inline-flex items-center gap-2"><Landmark className="h-4 w-4" />Center for Quantitative Finance, National University of Singapore</span>
+						<div className="flex min-h-[300px] items-center sm:min-h-[420px] lg:min-h-[560px]">
+							<div className="mx-auto max-w-2xl text-center text-white sm:max-w-3xl">
+								<h1 className="text-2xl font-bold sm:text-3xl md:text-4xl lg:text-5xl">Quantitative&nbsp;Finance&nbsp;Conference&nbsp;2026</h1>
+								<p className="mt-3 text-sm sm:text-base md:text-lg lg:text-xl">10–12 June 2026 · Singapore</p>
+								<div className="mt-4 flex flex-wrap items-center justify-center gap-3 text-xs sm:text-sm opacity-95">
+									<span className="hidden sm:inline-flex items-center gap-2"><Landmark className="h-4 w-4" />Center for Quantitative Finance, National University of Singapore</span>
 							</div>
-							<div className="mt-8">
+							<div className="mt-6 sm:mt-8">
 								<Button size="lg" className="rounded-full bg-accent text-accent-foreground hover:bg-accent/90">Register Now</Button>
 							</div>
 						</div>
