@@ -22,15 +22,15 @@ export default function App() {
 				/>
 				<div className="absolute inset-0 bg-primary/50 sm:bg-primary/40" />
 				<div className="relative mx-auto max-w-6xl px-6">
-						<div className="flex min-h-[300px] items-center sm:min-h-[420px] lg:min-h-[560px]">
-							<div className="mx-auto max-w-2xl text-center text-white sm:max-w-3xl">
-								<h1 className="text-2xl font-bold sm:text-3xl md:text-4xl lg:text-5xl">Quantitative&nbsp;Finance&nbsp;Conference&nbsp;2026</h1>
+						<div className="flex min-h-[260px] items-center sm:min-h-[420px] lg:min-h-[560px]">
+							<div className="mx-auto max-w-xl text-center text-white sm:max-w-3xl lg:max-w-5xl">
+								<h1 className="text-xl font-bold leading-tight sm:text-3xl md:text-4xl lg:text-5xl lg:whitespace-nowrap">Quantitative Finance&nbsp;Conference&nbsp;2026</h1>
 								<p className="mt-3 text-sm sm:text-base md:text-lg lg:text-xl">10–12 June 2026 · Singapore</p>
 								<div className="mt-4 flex flex-wrap items-center justify-center gap-3 text-xs sm:text-sm opacity-95">
 									<span className="hidden sm:inline-flex items-center gap-2"><Landmark className="h-4 w-4" />Center for Quantitative Finance, National University of Singapore</span>
 							</div>
 							<div className="mt-6 sm:mt-8">
-								<Button size="lg" className="rounded-full bg-accent text-accent-foreground hover:bg-accent/90">Register Now</Button>
+								<Button size="lg" className="w-full sm:w-auto rounded-full bg-accent text-accent-foreground hover:bg-accent/90">Register Now</Button>
 							</div>
 						</div>
 					</div>
