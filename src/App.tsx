@@ -38,7 +38,7 @@ export default function App() {
 			</section>
 
 			<main className="flex-1">
-				<section id="speakers" className="bg-white py-12 md:py-16 lg:py-20">
+				<section id="keynotes" className="bg-white py-12 md:py-16 lg:py-20">
 					<div className="mx-auto max-w-6xl px-6">
 						<div className="space-y-4">
 							<h2 className="text-2xl font-bold md:text-3xl lg:text-4xl">Keynotes</h2>
