@@ -10,7 +10,7 @@ export type Keynote = {
 export const keynotes: Keynote[] = [
   {
     name: "Steven G. Kou",
-    affiliation: "Boston University",
+    affiliation: "Boston University, USA",
     siteUrl: "https://sites.google.com/site/stevenkousg/",
     initials: "SK",
     bio:
@@ -19,7 +19,7 @@ export const keynotes: Keynote[] = [
   },
   {
     name: "Huyên Pham",
-    affiliation: "Ecole Polytechnique, Centre de Mathématiques Appliquées (CMAP)",
+    affiliation: "École Polytechnique, France",
     siteUrl: "https://sites.google.com/site/phamxuanhuyen/",
     initials: "HP",
     bio:

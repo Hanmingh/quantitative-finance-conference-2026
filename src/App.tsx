@@ -56,21 +56,20 @@ export default function App() {
 				<section id="about" className="py-12 md:py-16 lg:py-20">
 					<div className="mx-auto grid max-w-6xl items-start gap-10 px-6">
 						<div className="space-y-5">
-							<h2 className="text-2xl font-bold md:text-3xl lg:text-4xl">About the Conference</h2>
+							<h2 className="text-2xl font-bold md:text-3xl lg:text-4xl">QF2026</h2>
 							<div className="h-1 w-16 rounded bg-accent md:w-20 mx-auto" />
-						<div className="mx-auto mt-4 max-w-3xl space-y-4 text-sm leading-relaxed text-muted-foreground md:text-base">
+						<ul className="mx-auto mt-6 grid max-w-4xl grid-cols-1 gap-3 text-base text-muted-foreground sm:grid-cols-3 md:gap-4 md:text-lg">
+							<li className="flex items-start gap-2"><CalendarDays className="mt-0.5 h-5 w-5 md:h-6 md:w-6 text-accent" /> 10–12 June 2026</li>
+							<li className="flex items-start gap-2"><MapPin className="mt-0.5 h-5 w-5 md:h-6 md:w-6 text-accent" /> Auditorium 1 (UT-AUD1), University Town</li>
+							<li className="flex items-start gap-2"><Landmark className="mt-0.5 h-5 w-5 md:h-6 md:w-6 text-accent" /> Center for Quantitative Finance, National University of Singapore</li>
+							</ul>
+						<div className="mx-auto mt-4 max-w-4xl space-y-4 text-sm leading-relaxed text-muted-foreground md:text-base text-justify">
 							<p>On behalf of the Centre for Quantitative Finance (CQF) at the National University of Singapore (NUS), we are delighted to invite you to join us at the QF Annual Conference 2026, to be held from 10–12 June 2026 in Singapore.</p>
 							<p>The QF Annual Conference is the flagship academic event of CQF, bringing together leading researchers, policymakers, and industry practitioners in quantitative finance, data science, and emerging technologies. The conference serves as a vibrant platform for advancing dialogue between theory and practice, fostering collaboration, and showcasing cutting-edge developments in financial econometrics, risk analytics, computational methods, fintech innovation, and quantum finance.</p>
 							<p>The Centre for Quantitative Finance (CQF) at NUS is dedicated to promoting interdisciplinary research and education at the intersection of mathematics, data science, and finance. We work closely with global academic and industry partners to advance innovation, develop frontier methodologies, and cultivate the next generation of thought leaders in quantitative finance.</p>
 							<p>This year’s conference will be integrated into the broader QF Thematic Program (1–19 June 2026), sponsored by the NUS Institute for Mathematical Sciences (IMS). The program features a series of tutorials, workshops, and collaborative research sessions, offering extended opportunities for in-depth academic exchange and networking. More information is available on the program website: https://ims.nus.edu.sg/events/qf_2026/.</p>
 							<p>We warmly welcome your participation in this exciting event and look forward to your contribution to the continuing success of the QF Annual Conference.</p>
 						</div>
-
-						<ul className="mx-auto mt-6 grid max-w-3xl grid-cols-1 gap-3 text-sm text-muted-foreground sm:grid-cols-3 md:gap-4">
-							<li className="flex items-start gap-2"><CalendarDays className="mt-0.5 h-4 w-4 text-accent" /> 10–12 June 2026</li>
-							<li className="flex items-start gap-2"><MapPin className="mt-0.5 h-4 w-4 text-accent" /> Auditorium 1 (UT-AUD1), University Town</li>
-							<li className="flex items-start gap-2"><Landmark className="mt-0.5 h-4 w-4 text-accent" /> Center for Quantitative Finance, National University of Singapore</li>
-						</ul>
 						</div>
 					</div>
 				</section>
@@ -156,7 +155,7 @@ function Speaker({ name, role, initials, siteUrl, bio, imageSrc }: { name: strin
                 <div className="text-base font-semibold">{name}</div>
                 <div className="text-sm text-muted-foreground">{role}</div>
 						{bio ? (
-							<p className="text-sm text-muted-foreground">
+							<p className="text-sm text-muted-foreground text-justify">
 								{(() => {
 									const phrase = 'Bachelier Finance Society'
 									const url = 'https://www.bachelierfinance.org/'
