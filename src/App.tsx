@@ -20,12 +20,12 @@ export default function App() {
 					alt="Conference hero background"
 					loading="eager"
 				/>
-				<div className="absolute inset-0 bg-primary/50 sm:bg-primary/40" />
+				<div className="absolute inset-0 bg-gradient-to-b from-blue-950/60 via-blue-900/50 to-blue-900/40 sm:from-blue-950/50 sm:via-blue-900/40 sm:to-blue-900/30" />
 				<div className="relative mx-auto max-w-6xl px-6">
 						<div className="flex min-h-[260px] items-center sm:min-h-[420px] lg:min-h-[560px]">
 							<div className="mx-auto max-w-xl text-center text-white sm:max-w-3xl lg:max-w-5xl">
-								<h1 className="text-xl font-bold leading-tight sm:text-3xl md:text-4xl lg:text-5xl lg:whitespace-nowrap">Quantitative Finance&nbsp;Conference&nbsp;2026</h1>
-								<p className="mt-3 text-sm sm:text-base md:text-lg lg:text-xl">10–12 June 2026 · Singapore</p>
+								<h1 className="text-xl font-bold leading-tight sm:text-3xl md:text-4xl lg:text-5xl lg:whitespace-nowrap drop-shadow-lg">Quantitative Finance&nbsp;Conference&nbsp;2026</h1>
+								<p className="mt-3 text-sm sm:text-base md:text-lg lg:text-xl drop-shadow-md">10–12 June 2026 · Singapore</p>
 								<div className="mt-4 flex flex-wrap items-center justify-center gap-3 text-xs sm:text-sm opacity-95">
 									<span className="hidden sm:inline-flex items-center gap-2"><Landmark className="h-4 w-4" />Center for Quantitative Finance, National University of Singapore</span>
 							</div>
