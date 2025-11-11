@@ -30,7 +30,9 @@ export default function App() {
 									<span className="hidden sm:inline-flex items-center gap-2"><Landmark className="h-4 w-4" />Center for Quantitative Finance, National University of Singapore</span>
 							</div>
 							<div className="mt-6 sm:mt-8">
-								<Button size="lg" className="w-full sm:w-auto rounded-full bg-accent text-accent-foreground hover:bg-accent/90">Register Now</Button>
+								<a href="#register">
+									<Button size="lg" className="w-full sm:w-auto rounded-full bg-accent text-accent-foreground transition-colors shadow-md hover:bg-accent/90 hover:shadow-lg">Register Now</Button>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -87,6 +89,46 @@ export default function App() {
 							>
 								View full program
 							</a>
+						</div>
+					</div>
+				</section>
+
+				{/* Registration */}
+				<section id="register" className="bg-white py-12 md:py-16 lg:py-20">
+					<div className="mx-auto max-w-6xl px-6">
+						<div className="space-y-4 text-center">
+							<h2 className="text-2xl font-bold md:text-3xl lg:text-4xl">Registration</h2>
+							<div className="h-1 w-16 rounded bg-accent md:w-20 mx-auto" />
+						</div>
+						<div className="mt-8 grid gap-6 md:grid-cols-2">
+							<Card className="shadow-sm">
+								<CardContent className="space-y-3 p-6">
+									<div className="text-lg font-semibold">Invited Session Proposal</div>
+									<p className="text-sm text-muted-foreground">For prospective organizers who wish to host an invited session at QF2026. Briefly outline the session theme, motivation, and 4 potential speakers (tentative) in your proposal.</p>
+									<a
+										href="https://forms.gle/YyuroP6bZqfmrL9r7"
+										target="_blank"
+										rel="noreferrer"
+										className="inline-flex items-center rounded-full bg-accent px-5 py-2.5 text-sm font-medium text-accent-foreground hover:bg-accent/90"
+									>
+										Open form
+									</a>
+								</CardContent>
+							</Card>
+							<Card className="shadow-sm">
+								<CardContent className="space-y-3 p-6">
+									<div className="text-lg font-semibold">Participant Registration</div>
+									<p className="text-sm text-muted-foreground">For general attendees (faculty, students, and industry). Please complete this form to register for attending the CQF Annual Conference 2026 (10–12 June 2026, National University of Singapore).</p>
+									<a
+										href="https://forms.gle/kkRW4jEgHBBN31Bd8"
+										target="_blank"
+										rel="noreferrer"
+										className="inline-flex items-center rounded-full bg-accent px-5 py-2.5 text-sm font-medium text-accent-foreground hover:bg-accent/90"
+									>
+										Open form
+									</a>
+								</CardContent>
+							</Card>
 						</div>
 					</div>
 				</section>
