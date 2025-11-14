@@ -118,15 +118,21 @@ export default function App() {
 							<Card className="shadow-sm">
 								<CardContent className="space-y-3 p-6">
 									<div className="text-lg font-semibold">Participant Registration</div>
-									<p className="text-sm text-muted-foreground">For general attendees (faculty, students, and industry). Please complete this form to register for attending the CQF Annual Conference 2026 (10–12 June 2026, National University of Singapore).</p>
-									<a
-										href="https://forms.gle/kkRW4jEgHBBN31Bd8"
-										target="_blank"
-										rel="noreferrer"
-										className="inline-flex items-center rounded-full bg-accent px-5 py-2.5 text-sm font-medium text-accent-foreground hover:bg-accent/90"
+									<div className="flex flex-wrap items-center gap-2 text-xs text-muted-foreground md:gap-3 md:text-sm">
+										<span className="font-medium">Conference fees:</span>
+										<span className="inline-flex items-center rounded-full bg-muted px-2 py-0.5 text-[11px] md:text-xs text-foreground">Standard S$350</span>
+										<span className="inline-flex items-center rounded-full bg-muted px-2 py-0.5 text-[11px] md:text-xs text-foreground">Student $150</span>
+										<span className="hidden md:inline text-muted-foreground">•</span>
+										<span className="inline-flex items-center rounded-full bg-muted/70 px-2 py-0.5 text-[11px] md:text-xs text-foreground">Dinner included</span>
+									</div>
+									<p className="text-sm text-muted-foreground">For general attendees (faculty, students, and industry). Registration opens soon. Currently only available for invited session proposals.</p>
+									<Button
+										size="sm"
+										disabled
+										className="inline-flex items-center rounded-full bg-muted px-5 py-2.5 text-sm font-medium text-muted-foreground cursor-not-allowed"
 									>
-										Open form
-									</a>
+										Coming soon
+									</Button>
 								</CardContent>
 							</Card>
 						</div>
