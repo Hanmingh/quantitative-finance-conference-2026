@@ -1,5 +1,5 @@
 import './App.css'
-import { CalendarDays, MapPin, Landmark } from 'lucide-react'
+import { CalendarDays, MapPin, Landmark, FileText } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import {
 	Card,
@@ -31,7 +31,7 @@ export default function App() {
 							</div>
 							<div className="mt-6 sm:mt-8">
 								<a href="#register">
-									<Button size="lg" className="w-full sm:w-auto rounded-full bg-accent text-accent-foreground transition-colors shadow-md hover:bg-accent/90 hover:shadow-lg">Register Now</Button>
+									<Button size="lg" className="w-full sm:w-auto rounded-full bg-accent text-accent-foreground transition-colors shadow-md hover:bg-accent/90 hover:shadow-lg">Call for Invited Sessions</Button>
 								</a>
 							</div>
 						</div>
@@ -103,15 +103,26 @@ export default function App() {
 							<Card className="shadow-sm">
 								<CardContent className="space-y-3 p-6">
 									<div className="text-lg font-semibold">Invited Session Proposal</div>
-									<p className="text-sm text-muted-foreground">For prospective organizers who wish to host an invited session at QF2026. Briefly outline the session theme, motivation, and 4 potential speakers (tentative) in your proposal.</p>
-									<a
-										href="https://forms.gle/YyuroP6bZqfmrL9r7"
-										target="_blank"
-										rel="noreferrer"
-										className="inline-flex items-center rounded-full bg-accent px-5 py-2.5 text-sm font-medium text-accent-foreground hover:bg-accent/90"
-									>
-										Submit Now
-									</a>
+									<p className="text-sm text-muted-foreground">For prospective organizers who wish to host an invited session at QF2026. Briefly outline the session theme, motivation, and 4 potential speakers in your proposal.</p>
+									<div className="flex flex-wrap justify-center gap-2 pt-1">
+										<a
+											href="https://forms.gle/YyuroP6bZqfmrL9r7"
+											target="_blank"
+											rel="noreferrer"
+											className="inline-flex items-center rounded-full bg-accent px-5 py-2.5 text-sm font-medium text-accent-foreground hover:bg-accent/90"
+										>
+											Submit Now
+										</a>
+										<a
+											href="/Call%20for%20Invited%20Sessions.pdf"
+											target="_blank"
+											rel="noreferrer"
+											className="inline-flex items-center rounded-full border px-5 py-2.5 text-sm font-medium text-foreground bg-white hover:bg-muted"
+										>
+											<FileText className="mr-2 h-4 w-4" />
+											View details
+										</a>
+									</div>
 								</CardContent>
 							</Card>
 							<Card className="shadow-sm">
