@@ -81,14 +81,13 @@ export default function App() {
 						<h2 className="text-2xl font-bold md:text-3xl lg:text-4xl">Program</h2>
 						<p className="mt-2 text-muted-foreground md:text-lg">For specific details, visit the official event page.</p>
 						<div className="mt-6">
-							<a
-								href="https://ims.nus.edu.sg/events/qf_2026/"
-								target="_blank"
-								rel="noreferrer"
-								className="inline-flex items-center rounded-full bg-accent px-5 py-2.5 text-sm font-medium text-accent-foreground hover:bg-accent/90"
+							<Button
+								size="sm"
+								disabled
+								className="inline-flex items-center rounded-full bg-muted px-5 py-2.5 text-sm font-medium text-muted-foreground cursor-not-allowed"
 							>
-								View full program
-							</a>
+								TBA
+							</Button>
 						</div>
 					</div>
 				</section>
@@ -111,7 +110,7 @@ export default function App() {
 										rel="noreferrer"
 										className="inline-flex items-center rounded-full bg-accent px-5 py-2.5 text-sm font-medium text-accent-foreground hover:bg-accent/90"
 									>
-										Open form
+										Submit Now
 									</a>
 								</CardContent>
 							</Card>
