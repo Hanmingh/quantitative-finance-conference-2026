@@ -61,7 +61,7 @@ import {
             <div className="flex items-center gap-6">
               {/* Logo */}
               <a href={logo.url} className="flex items-center gap-2">
-                <img src={logo.src} className="h-17 w-auto" alt={logo.alt} />
+                <img src={logo.src} className="h-17 w-auto" alt={logo.alt} loading="eager" />
               </a>
               <div className="flex items-center">
                 <NavigationMenu>
@@ -78,7 +78,7 @@ import {
             <div className="flex h-20 items-center justify-between">
               {/* Logo */}
               <a href={logo.url} className="flex items-center gap-2">
-                <img src={logo.src} className="h-full w-auto" alt={logo.alt} />
+                <img src={logo.src} className="h-full w-auto" alt={logo.alt} loading="eager" />
               </a>
               <Sheet>
                 <SheetTrigger asChild>
@@ -90,7 +90,7 @@ import {
                   <SheetHeader>
                     <SheetTitle>
                       <a href={logo.url} className="flex items-center gap-2">
-                        <img src={logo.src} className="h-8 w-auto" alt={logo.alt} />
+                        <img src={logo.src} className="h-8 w-auto" alt={logo.alt} loading="eager" />
                       </a>
                     </SheetTitle>
                   </SheetHeader>

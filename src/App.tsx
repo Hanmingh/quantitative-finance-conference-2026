@@ -206,7 +206,7 @@ function Speaker({ name, role, initials, siteUrl, bio, imageSrc }: { name: strin
     return (
         <div className="flex h-full flex-col items-center gap-3 rounded-lg border p-4 text-center">
             <Avatar className="h-36 w-36 md:h-40 md:w-40">
-                <AvatarImage src={imageSrc || ""} alt={name} />
+                <AvatarImage src={imageSrc || ""} alt={name} loading="eager" />
                 <AvatarFallback>{initials}</AvatarFallback>
             </Avatar>
             <div className="space-y-1">
