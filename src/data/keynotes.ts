@@ -17,6 +17,14 @@ export const keynotes: Keynote[] = [
     imageSrc: "/Bea.png",
   },
   {
+    name: "Damir Filipović",
+    affiliation: "Ecole Polytechnique Fédérale de Lausanne (EPFL)",
+    siteUrl: "https://www.epfl.ch/labs/csf/",
+    initials: "DF",
+    bio:"Swissquote Chair in Quantitative Finance at Ecole Polytechnique Fédérale de Lausanne (EPFL); former faculty member of the University of Vienna, the University of Munich and Princeton University. He is recipient of the Louis Bachelier Prize (2016). His research focus is on quantitative finance and risk management. He serves on several editorial boards and has published extensively in leading journals including Journal of Finance, Journal of Financial Economics, Mathematical Finance, Finance and Stochastics, and the Annals of Applied Probability. ",
+    imageSrc: "/Damir.jpg",
+  },
+  {
     name: "Steven G. Kou",
     affiliation: "Boston University, USA",
     siteUrl: "https://sites.google.com/site/stevenkousg/",
