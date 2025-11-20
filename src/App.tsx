@@ -131,7 +131,7 @@ export default function App() {
 									<div className="flex flex-wrap items-center gap-2 text-xs text-muted-foreground md:gap-3 md:text-sm">
 										<span className="font-medium">Conference fees:</span>
 										<span className="inline-flex items-center rounded-full bg-muted px-2 py-0.5 text-[11px] md:text-xs text-foreground">Standard S$350</span>
-										<span className="inline-flex items-center rounded-full bg-muted px-2 py-0.5 text-[11px] md:text-xs text-foreground">Student $150</span>
+										<span className="inline-flex items-center rounded-full bg-muted px-2 py-0.5 text-[11px] md:text-xs text-foreground">Student S$150</span>
 										<span className="hidden md:inline text-muted-foreground">•</span>
 										<span className="inline-flex items-center rounded-full bg-muted/70 px-2 py-0.5 text-[11px] md:text-xs text-foreground">Dinner included</span>
 									</div>

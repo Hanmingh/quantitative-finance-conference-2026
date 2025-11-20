@@ -9,6 +9,14 @@ export type Keynote = {
 
 export const keynotes: Keynote[] = [
   {
+    name: "Beatrice Acciaio",
+    affiliation: "ETH Zürich, Switzerland",
+    siteUrl: "https://people.math.ethz.ch/~beacciaio/",
+    initials: "BA",
+    bio: "Full Professor at ETH Zürich, Executive Secretary of the Bachelier Finance Society and recipient of the Louis Bachelier Prize (2022). Her research spans optimal transport theory and stochastic analysis, and their applications in finance, insurance and economics. She is Associate Editor e.g. in SIFIN, Mathematical Finance, Finance and Stochastics, Annals of Applied Probability, and IJTAF.",
+    imageSrc: "/Bea.png",
+  },
+  {
     name: "Steven G. Kou",
     affiliation: "Boston University, USA",
     siteUrl: "https://sites.google.com/site/stevenkousg/",
@@ -25,7 +33,7 @@ export const keynotes: Keynote[] = [
     bio:
       "Full Professor at École Polytechnique (CMAP) and Vice-President of the Bachelier Finance Society (2024); recipient of the Louis Bachelier Prize (2007). His research spans stochastic control, mathematical finance, machine learning, numerical probability, and large deviations, and he serves as Editor-in-Chief of SIAM Journal on Control and Optimization (since 2024).",
     imageSrc: "/pham.jpg",
-  },
+  }
 
 ]
 
