@@ -1,5 +1,5 @@
 import './App.css'
-import { CalendarDays, MapPin, Landmark, FileText } from 'lucide-react'
+import { CalendarDays, MapPin, Landmark, FileText, Users } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import {
 	Card,
@@ -7,6 +7,7 @@ import {
 } from '@/components/ui/card'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { keynotes } from '@/data/keynotes'
+import { organizers } from '@/data/organizers'
 import { Navbar } from '@/components/navbar'
 
 export default function App() {
@@ -64,6 +65,13 @@ export default function App() {
 							<li className="flex items-start gap-2"><CalendarDays className="mt-0.5 h-5 w-5 md:h-6 md:w-6 text-accent" /> 10–12 June 2026</li>
 							<li className="flex items-start gap-2"><MapPin className="mt-0.5 h-5 w-5 md:h-6 md:w-6 text-accent" /> Auditorium 1 (UT-AUD1), University Town</li>
 							<li className="flex items-start gap-2"><Landmark className="mt-0.5 h-5 w-5 md:h-6 md:w-6 text-accent" /> Center for Quantitative Finance, National University of Singapore</li>
+							<li className="flex items-start gap-2 sm:col-span-2 md:col-span-3">
+								<Users className="mt-0.5 h-5 w-5 md:h-6 md:w-6 text-accent" />
+								<span>
+									<span className="font-medium text-foreground">Organizing committee:</span>{' '}
+									{organizers.join(', ')}
+								</span>
+							</li>
 							</ul>
 						<div className="mx-auto mt-4 max-w-4xl space-y-4 text-sm leading-relaxed text-muted-foreground md:text-base text-justify">
 							<p>On behalf of the Centre for Quantitative Finance (CQF) at the National University of Singapore (NUS), we are delighted to invite you to join us at the QF Annual Conference 2026, to be held from 10–12 June 2026 in Singapore.</p>
@@ -202,7 +210,7 @@ export default function App() {
 
 // Removed deprecated TimelineRow
 
-function Speaker({ name, role, initials, siteUrl, bio, imageSrc }: { name: string; role: string; initials: string; siteUrl?: string; bio?: string; imageSrc?: string }) {
+function Speaker({ name, role, initials, siteUrl, bio, imageSrc }: { name: string; role?: string; initials: string; siteUrl?: string; bio?: string; imageSrc?: string }) {
     return (
         <div className="flex h-full flex-col items-center gap-3 rounded-lg border p-4 text-center">
             <Avatar className="h-36 w-36 md:h-40 md:w-40">
@@ -211,7 +219,7 @@ function Speaker({ name, role, initials, siteUrl, bio, imageSrc }: { name: strin
             </Avatar>
             <div className="space-y-1">
                 <div className="text-base font-semibold">{name}</div>
-                <div className="text-sm text-muted-foreground">{role}</div>
+                {role ? <div className="text-sm text-muted-foreground">{role}</div> : null}
 						{bio ? (
 							<p className="text-sm text-muted-foreground text-justify">
 								{(() => {
