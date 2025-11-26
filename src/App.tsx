@@ -9,6 +9,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { keynotes } from '@/data/keynotes'
 import { organizers } from '@/data/organizers'
 import { Navbar } from '@/components/navbar'
+import Footer from '@/components/footer'
 
 export default function App() {
 	return (
@@ -62,9 +63,18 @@ export default function App() {
 							<h2 className="text-2xl font-bold md:text-3xl lg:text-4xl">QF2026</h2>
 							<div className="h-1 w-16 rounded bg-accent md:w-20 mx-auto" />
 						<ul className="mx-auto mt-6 grid max-w-4xl grid-cols-1 gap-3 text-base text-muted-foreground sm:grid-cols-3 md:gap-4 md:text-lg">
-							<li className="flex items-start gap-2"><CalendarDays className="mt-0.5 h-5 w-5 md:h-6 md:w-6 text-accent" /> 10–12 June 2026</li>
-							<li className="flex items-start gap-2"><MapPin className="mt-0.5 h-5 w-5 md:h-6 md:w-6 text-accent" /> Auditorium 1 (UT-AUD1), University Town</li>
-							<li className="flex items-start gap-2"><Landmark className="mt-0.5 h-5 w-5 md:h-6 md:w-6 text-accent" /> Center for Quantitative Finance, National University of Singapore</li>
+							<li className="flex items-start gap-2">
+								<CalendarDays className="mt-0.5 h-5 w-5 md:h-6 md:w-6 text-accent" />
+								<span>10–12 June 2026</span>
+							</li>
+							<li className="flex items-start gap-2">
+								<MapPin className="mt-0.5 h-5 w-5 md:h-6 md:w-6 text-accent" />
+								<span>Auditorium 1 (UT-AUD1), University Town</span>
+							</li>
+							<li className="flex items-start gap-2">
+								<Landmark className="mt-0.5 h-5 w-5 md:h-6 md:w-6 text-accent" />
+								<span>Center for Quantitative Finance, NUS</span>
+							</li>
 							<li className="flex items-start gap-2 sm:col-span-2 md:col-span-3">
 								<Users className="mt-0.5 h-5 w-5 md:h-6 md:w-6 text-accent" />
 								<span>
@@ -113,14 +123,14 @@ export default function App() {
 									<div className="text-lg font-semibold">Invited Session Proposal</div>
 									<p className="text-sm text-muted-foreground">For prospective organizers who wish to host an invited session at QF2026. Briefly outline the session theme, motivation, and 4 potential speakers in your proposal.</p>
 									<div className="flex flex-wrap justify-center gap-2 pt-1">
-										<a
-											href="https://forms.gle/YyuroP6bZqfmrL9r7"
-											target="_blank"
-											rel="noreferrer"
-											className="inline-flex items-center rounded-full bg-accent px-5 py-2.5 text-sm font-medium text-accent-foreground hover:bg-accent/90"
-										>
-											Submit Now
-										</a>
+									<a
+										href="https://forms.gle/YyuroP6bZqfmrL9r7"
+										target="_blank"
+										rel="noreferrer"
+										className="inline-flex items-center rounded-full bg-accent px-5 py-2.5 text-sm font-medium text-accent-foreground hover:bg-accent/90"
+									>
+										Submit Now
+									</a>
 										<a
 											href="/Call%20for%20Invited%20Sessions.pdf"
 											target="_blank"
@@ -195,15 +205,7 @@ export default function App() {
 
 			</main>
 
-			<footer className="border-t bg-muted/40">
-				<div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6 text-sm text-muted-foreground">
-					<p>© 2026 Center for Quantitative Finance</p>
-					<div className="flex items-center gap-4">
-						<a className="hover:underline" href="#">Privacy</a>
-						<a className="hover:underline" href="#">Terms</a>
-					</div>
-				</div>
-			</footer>
+			<Footer />
       </div>
 	)
 }
