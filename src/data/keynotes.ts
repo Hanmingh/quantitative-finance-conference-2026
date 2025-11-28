@@ -48,7 +48,7 @@ export const keynotes: Keynote[] = [
     siteUrl: "https://engineering.nyu.edu/faculty/nizar-touzi",
     initials: "NT",
     bio:
-      "Professor and Chair of the Department of Finance and Risk Engineering at NYU; previously on the faculty at Université Paris 1 Panthéon-Sorbonne, CREST, Imperial College London, and École Polytechnique. He was an invited speaker at the International Congress of Mathematicians (2010) and is recipient of the Louis Bachelier Prize (2012) and the Paris Europlace Award for Best Young Researcher in Finance (2007). His research spans stochastic control, mathematical finance, and probability theory, and he serves as editor or associate editor for leading journals in financial mathematics, applied probability, and control theory.",
+      "Professor and Chair of the Department of Finance and Risk Engineering at NYU; previously on the faculty at Université Paris 1 Panthéon-Sorbonne, CREST, Imperial College London, and École Polytechnique. He was an invited speaker at the International Congress of Mathematicians (2010) and is recipient of the Louis Bachelier Prize (2012) and the Paris Europlace Award for Best Young Researcher in Finance (2007). His research spans stochastic control, mathematical finance, and probability theory, and he serves as an editor or associate editor for leading journals in these fields.",
     imageSrc: "/Touzi.jpg",
   }
 ]
