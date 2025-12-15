@@ -154,13 +154,14 @@ export default function App() {
 										<span className="inline-flex items-center rounded-full bg-muted/70 px-2 py-0.5 text-[11px] md:text-xs text-foreground">Dinner included</span>
 									</div>
 									<p className="text-sm text-muted-foreground">For general attendees (faculty, students, and industry). Registration opens soon. Currently only available for invited session proposals.</p>
-									<Button
-										size="sm"
-										disabled
-										className="inline-flex items-center rounded-full bg-muted px-5 py-2.5 text-sm font-medium text-muted-foreground cursor-not-allowed"
+									<a
+										href="https://forms.gle/kkRW4jEgHBBN31Bd8"
+										target="_blank"
+										rel="noreferrer"
+										className="inline-flex items-center rounded-full bg-accent px-5 py-2.5 text-sm font-medium text-accent-foreground hover:bg-accent/90"
 									>
-										Coming soon
-									</Button>
+										Submit Now
+									</a>
 								</CardContent>
 							</Card>
 						</div>
