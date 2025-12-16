@@ -124,7 +124,7 @@ export default function App() {
 									<p className="text-sm text-muted-foreground">For prospective organizers who wish to host an invited session at QF2026. Briefly outline the session theme, motivation, and 4 potential speakers in your proposal.</p>
 									<div className="flex flex-wrap justify-center gap-2 pt-1">
 									<a
-										href="https://forms.gle/YyuroP6bZqfmrL9r7"
+										href="https://forms.office.com/r/MaeztkxuPD"
 										target="_blank"
 										rel="noreferrer"
 										className="inline-flex items-center rounded-full bg-accent px-5 py-2.5 text-sm font-medium text-accent-foreground hover:bg-accent/90"
