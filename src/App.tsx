@@ -160,7 +160,7 @@ export default function App() {
 										rel="noreferrer"
 										className="inline-flex items-center rounded-full bg-accent px-5 py-2.5 text-sm font-medium text-accent-foreground hover:bg-accent/90"
 									>
-										Submit Now
+										Register
 									</a>
 								</CardContent>
 							</Card>
