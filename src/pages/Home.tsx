@@ -1,5 +1,4 @@
 import { CalendarDays, Landmark, Info, MapPin } from 'lucide-react'
-import { Button } from '@/components/ui/button'
 import {
 	Card,
 } from '@/components/ui/card'
@@ -41,11 +40,6 @@ export default function Home() {
 							<p className="mt-3 text-sm sm:text-base md:text-lg lg:text-xl drop-shadow-md">2–12 June 2026 · Singapore</p>
 							<div className="mt-4 flex flex-wrap items-center justify-center gap-3 text-xs sm:text-sm opacity-95">
 								<span className="hidden sm:inline-flex items-center gap-2"><Landmark className="h-4 w-4" />Center for Quantitative Finance X Institute for Mathematical Sciences, National University of Singapore</span>
-							</div>
-							<div className="mt-6 sm:mt-8">
-								<a href="https://forms.office.com/r/MaeztkxuPD" target="_blank" rel="noreferrer">
-									<Button size="lg" className="w-full sm:w-auto rounded-full bg-accent text-accent-foreground transition-colors shadow-md hover:bg-accent/90 hover:shadow-lg cursor-pointer">Call for Invited Sessions</Button>
-								</a>
 							</div>
 						</div>
 					</div>
