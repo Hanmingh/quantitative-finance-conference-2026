@@ -1,4 +1,4 @@
-import { CalendarDays, Landmark, Info, MapPin } from 'lucide-react'
+import { CalendarDays, Landmark, MapPin } from 'lucide-react'
 import {
 	Card,
 } from '@/components/ui/card'
