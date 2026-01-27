@@ -21,6 +21,7 @@ import {
     SheetTrigger,
   } from "@/components/ui/sheet";
   import { Menu } from "lucide-react";
+  import { Link, NavLink } from "react-router-dom";
   
   interface MenuItem {
     title: string;
@@ -47,11 +48,10 @@ import {
       alt: "Center for Quantitative Finance",
     },
     menu = [
-      { title: "Home", url: "#" },
-      { title: "Keynotes", url: "#keynotes" },
-      { title: "About", url: "#about" },
-      { title: "Program", url: "#program" },
-      { title: "Venue", url: "#venue" },
+      { title: "Home", url: "/" },
+      { title: "Summer School", url: "/summer-school" },
+      { title: "Workshop", url: "/workshop" },
+      { title: "Conference", url: "/conference" },
     ],
   }: NavbarProps) => {
     return (
@@ -131,12 +131,17 @@ import {
     return (
       <NavigationMenuItem key={item.title}>
         <NavigationMenuLink asChild>
-          <a
-            href={item.url}
-            className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-muted hover:text-accent-foreground"
+          <NavLink
+            to={item.url}
+            end={item.url === '/'}
+            className={({ isActive }) =>
+              `group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-muted hover:text-accent-foreground ${
+                isActive ? 'bg-muted text-accent-foreground' : 'bg-background'
+              }`
+            }
           >
             {item.title}
-          </a>
+          </NavLink>
         </NavigationMenuLink>
       </NavigationMenuItem>
     );
@@ -159,17 +164,24 @@ import {
     }
   
     return (
-      <a key={item.title} href={item.url} className="text-md font-semibold">
+      <NavLink
+        key={item.title}
+        to={item.url}
+        end={item.url === '/'}
+        className={({ isActive }) =>
+          `text-md font-semibold ${isActive ? 'text-accent' : ''}`
+        }
+      >
         {item.title}
-      </a>
+      </NavLink>
     );
   };
   
   const SubMenuLink = ({ item }: { item: MenuItem }) => {
     return (
-      <a
+      <Link
         className="flex flex-row gap-4 rounded-md p-3 leading-none no-underline transition-colors outline-none select-none hover:bg-muted hover:text-accent-foreground"
-        href={item.url}
+        to={item.url}
       >
         <div className="text-foreground">{item.icon}</div>
         <div>
@@ -180,7 +192,7 @@ import {
             </p>
           )}
         </div>
-      </a>
+      </Link>
     );
   };
   
