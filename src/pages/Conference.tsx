@@ -45,11 +45,11 @@ export default function Conference() {
 						<div className="flex items-center justify-center gap-3">
 							<div className="hidden sm:block h-px flex-1 bg-gradient-to-r from-transparent to-border" />
 							<p className="text-sm text-muted-foreground text-center">
-								This conference is a part of the{' '}
+								The CQF Annual Conference 2026 is part of the {' '}
 								<Link to="/program" className="font-medium text-accent hover:underline">
-									QF2026 Summer Program
+									Quantitative Finance Programme (01 Jun 2026–19 Jun 2026)
 								</Link>
-								<span className="hidden sm:inline">, co-sponsored by CQF & IMS, NUS</span>
+								<span className="hidden sm:inline">, co-sponsored by the <a href="https://ims.nus.edu.sg/events/qf_2026/" target="_blank" rel="noreferrer" className="font-medium text-accent hover:underline">Institute for Mathematical Sciences (IMS)</a> and the <a href="https://www.math.nus.edu.sg/cqf/" target="_blank" rel="noreferrer" className="font-medium text-accent hover:underline">Centre for Quantitative Finance (CQF)</a>.</span>
 							</p>
 							<div className="hidden sm:block h-px flex-1 bg-gradient-to-l from-transparent to-border" />
 						</div>

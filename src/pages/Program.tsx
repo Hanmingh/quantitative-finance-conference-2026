@@ -37,7 +37,7 @@ export default function Program() {
 					<div className="flex min-h-[260px] items-center sm:min-h-[420px] lg:min-h-[560px]">
 						<div className="mx-auto max-w-xl text-center text-white sm:max-w-3xl lg:max-w-5xl">
 							<h1 className="text-xl font-bold leading-tight sm:text-3xl md:text-4xl lg:text-5xl lg:whitespace-nowrap drop-shadow-lg">Quantitative Finance&nbsp;Summer Program&nbsp;2026</h1>
-							<p className="mt-3 text-sm sm:text-base md:text-lg lg:text-xl drop-shadow-md">2–12 June 2026 · Singapore</p>
+							<p className="mt-3 text-sm sm:text-base md:text-lg lg:text-xl drop-shadow-md">1–19 June 2026 · Singapore</p>
 							<div className="mt-4 flex flex-wrap items-center justify-center gap-3 text-xs sm:text-sm opacity-95">
 								<span className="hidden sm:inline-flex items-center gap-2"><Landmark className="h-4 w-4" />Center for Quantitative Finance X Institute for Mathematical Sciences, National University of Singapore</span>
 							</div>
@@ -119,7 +119,7 @@ export default function Program() {
 						<ul className="mx-auto mt-8 grid max-w-3xl grid-cols-1 gap-3 text-base text-muted-foreground sm:grid-cols-2 md:gap-4 md:text-lg">
 							<li className="flex items-start gap-2">
 								<CalendarDays className="mt-0.5 h-5 w-5 md:h-6 md:w-6 text-accent" />
-								<span>02 Jun 2026 – 12 Jun 2026</span>
+								<span>01 Jun 2026 – 19 Jun 2026</span>
 							</li>
 							<li className="flex items-start gap-2">
 								<MapPin className="mt-0.5 h-5 w-5 md:h-6 md:w-6 text-accent" />
