@@ -7,6 +7,7 @@ import {
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { keynotes } from '@/data/keynotes'
 import { organizers } from '@/data/organizers'
+import { Link } from 'react-router-dom'
 
 export default function Conference() {
 	return (
@@ -38,6 +39,23 @@ export default function Conference() {
 			</section>
 
 			<main className="flex-1">
+				{/* Program Info */}
+				<section className="bg-muted/40 py-4 md:py-5">
+					<div className="mx-auto max-w-4xl px-6">
+						<div className="flex items-center justify-center gap-3">
+							<div className="hidden sm:block h-px flex-1 bg-gradient-to-r from-transparent to-border" />
+							<p className="text-sm text-muted-foreground text-center">
+								This conference is a part of the{' '}
+								<Link to="/program" className="font-medium text-accent hover:underline">
+									QF2026 Summer Program
+								</Link>
+								<span className="hidden sm:inline">, co-sponsored by CQF & IMS, NUS</span>
+							</p>
+							<div className="hidden sm:block h-px flex-1 bg-gradient-to-l from-transparent to-border" />
+						</div>
+					</div>
+				</section>
+
 				<section id="keynotes" className="bg-white py-12 md:py-16 lg:py-20">
 					<div className="mx-auto max-w-6xl px-6">
 						<div className="space-y-4 text-center">
@@ -86,7 +104,7 @@ export default function Conference() {
 							<p>On behalf of the Centre for Quantitative Finance (CQF) at the National University of Singapore (NUS), we are delighted to invite you to join us at the QF Annual Conference 2026, to be held from 10–12 June 2026 in Singapore.</p>
 							<p>The QF Annual Conference is the flagship academic event of CQF, bringing together leading researchers, policymakers, and industry practitioners in quantitative finance, data science, and emerging technologies. The conference serves as a vibrant platform for advancing dialogue between theory and practice, fostering collaboration, and showcasing cutting-edge developments in financial econometrics, risk analytics, computational methods, fintech innovation, and quantum finance.</p>
 							<p>The Centre for Quantitative Finance (CQF) at NUS is dedicated to promoting interdisciplinary research and education at the intersection of mathematics, data science, and finance. We work closely with global academic and industry partners to advance innovation, develop frontier methodologies, and cultivate the next generation of thought leaders in quantitative finance.</p>
-							<p>This year's conference will be integrated into the broader QF Thematic Program (1–19 June 2026), sponsored by the NUS Institute for Mathematical Sciences (IMS). The program features a series of tutorials, workshops, and collaborative research sessions, offering extended opportunities for in-depth academic exchange and networking. More information is available on the program website: https://ims.nus.edu.sg/events/qf_2026/.</p>
+							<p>This year's conference will be integrated into the broader QF Thematic Program (1–19 June 2026), sponsored by the NUS Institute for Mathematical Sciences (IMS). The program features a series of tutorials, workshops, and collaborative research sessions, offering extended opportunities for in-depth academic exchange and networking. More information is available on the program website: <a href="https://ims.nus.edu.sg/events/qf_2026/" target="_blank" rel="noreferrer" className="text-accent hover:underline">ims.nus.edu.sg/events/qf_2026</a>.</p>
 							<p>We warmly welcome your participation in this exciting event and look forward to your contribution to the continuing success of the QF Annual Conference.</p>
 						</div>
 					</div>
@@ -103,7 +121,7 @@ export default function Conference() {
 							<Card className="shadow-sm">
 								<CardContent className="space-y-3 p-6">
 									<div className="text-lg font-semibold">Invited Session Proposal</div>
-									<p className="text-sm text-muted-foreground">For prospective organizers who wish to host an invited session at QF2026. Briefly outline the session theme, motivation, and 4 potential speakers in your proposal.</p>
+									<p className="text-sm text-muted-foreground text-justify">For prospective organizers who wish to host an invited session at QF2026. Briefly outline the session theme, motivation, and 4 potential speakers in your proposal.</p>
 									<div className="flex flex-wrap justify-center gap-2 pt-1">
 									<a
 										href="https://forms.office.com/r/MaeztkxuPD"
@@ -135,7 +153,7 @@ export default function Conference() {
 										<span className="hidden md:inline text-muted-foreground">•</span>
 										<span className="inline-flex items-center rounded-full bg-muted/70 px-2 py-0.5 text-[11px] md:text-xs text-foreground">Dinner included</span>
 									</div>
-									<p className="text-sm text-muted-foreground">For general attendees (faculty, students, and industry). Registration opens soon. Currently only available for invited session proposals.</p>
+									<p className="text-sm text-muted-foreground text-justify">For general attendees (faculty, students, and industry). Registration opens soon. Currently only available for invited session proposals.</p>
 									<Button
 									disabled
 									className="inline-flex items-center rounded-full bg-muted px-5 py-2.5 text-sm font-medium text-muted-foreground cursor-not-allowed"
@@ -167,20 +185,20 @@ export default function Conference() {
 										allowFullScreen
 									/>
 								</div>
-								<div className="flex justify-between p-4 text-sm text-muted-foreground">
-					      			<div className="text-left">
-										<div>Auditorium 1 (UT-AUD1), University Town</div>
+							<div className="flex flex-col sm:flex-row sm:justify-between gap-4 p-4 text-sm text-muted-foreground">
+									<div className="text-left">
+										<div className="font-medium text-foreground">Auditorium 1 (UT-AUD1), University Town</div>
 										<div>1 Create Wy, Level 1 Town Plaza, Singapore 138602</div>
 									</div>
 									<a
 										href="https://www.google.com/maps/search/?api=1&query=1+Create+Way,+Town+Plaza,+Singapore+138602"
 										target="_blank"
 										rel="noreferrer"
-										className="inline-flex items-center rounded-full bg-accent px-4 py-2 text-sm font-medium text-accent-foreground hover:bg-accent/90 cursor-pointer"
+										className="inline-flex items-center justify-center rounded-full bg-accent px-4 py-2 text-sm font-medium text-accent-foreground hover:bg-accent/90 cursor-pointer"
 									>
 										Open in Google Maps
-        							</a>
-      							</div>
+									</a>
+								</div>
 							</CardContent>
 						</Card>
 					</div>

@@ -22,7 +22,7 @@ const organizingCommittee = [
 	{ name: "Marko Weber", affiliation: "National University of Singapore" },
 ]
 
-export default function Home() {
+export default function Program() {
 	return (
 		<>
 			<section id="hero" className="relative isolate">
@@ -32,8 +32,8 @@ export default function Home() {
 					alt="Conference hero background"
 					loading="eager"
 				/>
-				<div className="absolute inset-0 bg-gradient-to-b from-blue-950/60 via-blue-900/50 to-blue-900/40 sm:from-blue-950/50 sm:via-blue-900/40 sm:to-blue-900/30" />
-					<div className="relative mx-auto max-w-6xl px-6">
+			<div className="absolute inset-0 bg-gradient-to-b from-blue-950/60 via-blue-900/50 to-blue-900/40 sm:from-blue-950/50 sm:via-blue-900/40 sm:to-blue-900/30" />
+				<div className="relative mx-auto max-w-6xl px-6">
 					<div className="flex min-h-[260px] items-center sm:min-h-[420px] lg:min-h-[560px]">
 						<div className="mx-auto max-w-xl text-center text-white sm:max-w-3xl lg:max-w-5xl">
 							<h1 className="text-xl font-bold leading-tight sm:text-3xl md:text-4xl lg:text-5xl lg:whitespace-nowrap drop-shadow-lg">Quantitative Finance&nbsp;Summer Program&nbsp;2026</h1>
@@ -91,11 +91,11 @@ export default function Home() {
 									</TableRow>
 									<TableRow className="hover:bg-muted/30">
 										<TableCell className="py-4 px-6">
-											<Link to="/conference" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
+											<Link to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
 												<div className="flex h-10 w-10 items-center justify-center rounded-full bg-accent/20 text-accent">
 													<CalendarDays className="h-5 w-5" />
 												</div>
-												<span className="font-medium text-foreground hover:text-accent transition-colors">Conference with contributed talks</span>
+												<span className="font-medium text-foreground hover:text-accent transition-colors">Conference</span>
 											</Link>
 										</TableCell>
 										<TableCell className="py-4 px-6 text-right text-muted-foreground">
@@ -119,7 +119,7 @@ export default function Home() {
 						<ul className="mx-auto mt-8 grid max-w-3xl grid-cols-1 gap-3 text-base text-muted-foreground sm:grid-cols-2 md:gap-4 md:text-lg">
 							<li className="flex items-start gap-2">
 								<CalendarDays className="mt-0.5 h-5 w-5 md:h-6 md:w-6 text-accent" />
-								<span>01 Jun 2026 – 19 Jun 2026</span>
+								<span>02 Jun 2026 – 12 Jun 2026</span>
 							</li>
 							<li className="flex items-start gap-2">
 								<MapPin className="mt-0.5 h-5 w-5 md:h-6 md:w-6 text-accent" />
@@ -151,25 +151,6 @@ export default function Home() {
 					</div>
 				</section>
 
-				{/* Activities / Important Dates */}
-				<section className="py-12 md:py-16 lg:py-20">
-					<div className="mx-auto max-w-4xl px-6">
-						<div className="space-y-4 text-center">
-							<h2 className="text-2xl font-bold md:text-3xl lg:text-4xl">Activities</h2>
-							<div className="h-1 w-16 rounded bg-accent md:w-20 mx-auto" />
-						</div>
-						<div className="mt-8 space-y-3">
-							<div className="flex items-start gap-3 text-muted-foreground">
-								<Info className="h-5 w-5 text-amber-500 shrink-0 mt-0.5" />
-								<p><span className="font-medium text-foreground">31 May 2026 (Sunday)</span> is Vesak Day holiday.</p>
-							</div>
-							<div className="flex items-start gap-3 text-muted-foreground">
-								<Info className="h-5 w-5 text-amber-500 shrink-0 mt-0.5" />
-								<p><span className="font-medium text-foreground">1 June 2026 (Monday)</span> is a public holiday in Singapore and the Institute will be closed.</p>
-							</div>
-						</div>
-					</div>
-				</section>
 			</main>
 		</>
 	)

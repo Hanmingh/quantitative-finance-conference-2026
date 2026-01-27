@@ -21,13 +21,11 @@ import {
     SheetTrigger,
   } from "@/components/ui/sheet";
   import { Menu } from "lucide-react";
-  import { Link, NavLink } from "react-router-dom";
+  import { Link, NavLink, useNavigate, useLocation } from "react-router-dom";
   
   interface MenuItem {
     title: string;
     url: string;
-    description?: string;
-    icon?: React.ReactNode;
     items?: MenuItem[];
   }
   
@@ -39,7 +37,7 @@ import {
     };
     menu?: MenuItem[];
   }
-  
+
 
   const Navbar = ({
     logo = {
@@ -49,9 +47,17 @@ import {
     },
     menu = [
       { title: "Home", url: "/" },
-      { title: "Summer School", url: "/summer-school" },
-      { title: "Workshop", url: "/workshop" },
-      { title: "Conference", url: "/conference" },
+      { title: "Keynotes", url: "/#keynotes" },
+      { title: "About", url: "/#about" },
+      { title: "Registration", url: "/#register" },
+      { 
+        title: "Program", 
+        url: "/program",
+        items: [
+          { title: "Summer School", url: "/summer-school" },
+          { title: "Workshop", url: "/workshop" },
+        ]
+      },
     ],
   }: NavbarProps) => {
     return (
@@ -64,7 +70,7 @@ import {
                 <img src={logo.src} className="h-17 w-auto" alt={logo.alt} loading="eager" />
               </a>
               <div className="flex items-center">
-                <NavigationMenu>
+                <NavigationMenu viewport={false}>
                   <NavigationMenuList>
                     {menu.map((item) => renderMenuItem(item))}
                   </NavigationMenuList>
@@ -112,36 +118,95 @@ import {
     );
   };
   
+  const HashLink = ({ item, className }: { item: MenuItem; className: string }) => {
+    const navigate = useNavigate();
+    const location = useLocation();
+    
+    const scrollToElement = (hash: string) => {
+      const element = document.getElementById(hash);
+      if (element) {
+        const navbarHeight = 80; // Height of sticky navbar
+        const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+        window.scrollTo({
+          top: elementPosition - navbarHeight,
+          behavior: 'smooth'
+        });
+      }
+    };
+    
+    const handleClick = (e: React.MouseEvent) => {
+      e.preventDefault();
+      const [path, hash] = item.url.split('#');
+      const targetPath = path || '/';
+      
+      if (location.pathname === targetPath) {
+        // Already on the page, just scroll
+        scrollToElement(hash);
+      } else {
+        // Navigate to the page first, then scroll
+        navigate(targetPath);
+        setTimeout(() => {
+          scrollToElement(hash);
+        }, 100);
+      }
+    };
+
+    return (
+      <a href={item.url} onClick={handleClick} className={className}>
+        {item.title}
+      </a>
+    );
+  };
+
   const renderMenuItem = (item: MenuItem) => {
     if (item.items) {
       return (
         <NavigationMenuItem key={item.title}>
-          <NavigationMenuTrigger>{item.title}</NavigationMenuTrigger>
-          <NavigationMenuContent className="bg-popover text-popover-foreground">
-            {item.items.map((subItem) => (
-              <NavigationMenuLink asChild key={subItem.title} className="w-80">
-                <SubMenuLink item={subItem} />
-              </NavigationMenuLink>
-            ))}
+          <Link to={item.url} className="outline-none">
+            <NavigationMenuTrigger className="bg-background data-[state=open]:bg-muted">{item.title}</NavigationMenuTrigger>
+          </Link>
+          <NavigationMenuContent>
+            <ul className="w-36 p-1">
+              {item.items.map((subItem) => (
+                <li key={subItem.title}>
+                  <NavigationMenuLink asChild>
+                    <Link
+                      to={subItem.url}
+                      className="block rounded-md px-3 py-2 text-sm font-medium text-foreground transition-colors hover:bg-muted hover:text-accent-foreground"
+                    >
+                      {subItem.title}
+                    </Link>
+                  </NavigationMenuLink>
+                </li>
+              ))}
+            </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
       );
     }
+
+    // Check if it's a hash link
+    const isHashLink = item.url.includes('#');
+    const baseClassName = "group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-muted hover:text-accent-foreground bg-background";
   
     return (
       <NavigationMenuItem key={item.title}>
         <NavigationMenuLink asChild>
-          <NavLink
-            to={item.url}
-            end={item.url === '/'}
-            className={({ isActive }) =>
-              `group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-muted hover:text-accent-foreground ${
-                isActive ? 'bg-muted text-accent-foreground' : 'bg-background'
-              }`
-            }
-          >
-            {item.title}
-          </NavLink>
+          {isHashLink ? (
+            <HashLink item={item} className={baseClassName} />
+          ) : (
+            <NavLink
+              to={item.url}
+              end={item.url === '/'}
+              className={({ isActive }) =>
+                `group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-muted hover:text-accent-foreground ${
+                  isActive ? 'bg-muted text-accent-foreground' : 'bg-background'
+                }`
+              }
+            >
+              {item.title}
+            </NavLink>
+          )}
         </NavigationMenuLink>
       </NavigationMenuItem>
     );
@@ -154,15 +219,34 @@ import {
           <AccordionTrigger className="text-md py-0 font-semibold hover:no-underline">
             {item.title}
           </AccordionTrigger>
-          <AccordionContent className="mt-2">
+          <AccordionContent className="mt-2 pl-4 flex flex-col gap-2">
             {item.items.map((subItem) => (
-              <SubMenuLink key={subItem.title} item={subItem} />
+              <Link
+                key={subItem.title}
+                to={subItem.url}
+                className="text-sm text-muted-foreground hover:text-accent transition-colors"
+              >
+                {subItem.title}
+              </Link>
             ))}
           </AccordionContent>
         </AccordionItem>
       );
     }
+
+    // Check if it's a hash link
+    const isHashLink = item.url.includes('#');
   
+    if (isHashLink) {
+      return (
+        <HashLink
+          key={item.title}
+          item={item}
+          className="text-md font-semibold"
+        />
+      );
+    }
+
     return (
       <NavLink
         key={item.title}
@@ -174,25 +258,6 @@ import {
       >
         {item.title}
       </NavLink>
-    );
-  };
-  
-  const SubMenuLink = ({ item }: { item: MenuItem }) => {
-    return (
-      <Link
-        className="flex flex-row gap-4 rounded-md p-3 leading-none no-underline transition-colors outline-none select-none hover:bg-muted hover:text-accent-foreground"
-        to={item.url}
-      >
-        <div className="text-foreground">{item.icon}</div>
-        <div>
-          <div className="text-sm font-semibold">{item.title}</div>
-          {item.description && (
-            <p className="text-sm leading-snug text-muted-foreground">
-              {item.description}
-            </p>
-          )}
-        </div>
-      </Link>
     );
   };
   

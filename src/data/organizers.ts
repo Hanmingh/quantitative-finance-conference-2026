@@ -5,4 +5,3 @@ export const organizers: string[] = [
   "Daniel Bartl",
 ]
 
-
