@@ -5,6 +5,7 @@ import {
 } from '@/components/ui/card'
 
 const workshopSpeakers = [
+	{ name: "Anna Aksamit", affiliation: "University of Sydney" },
 	{ name: "Sara Biagini", affiliation: "Luiss University" },
 	{ name: "Patrick Cheridito", affiliation: "ETH Zürich" },
 	{ name: "Umut Çetin", affiliation: "The London School of Economics and Political Science" },
