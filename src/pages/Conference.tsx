@@ -28,9 +28,27 @@ export default function Conference() {
 							<div className="mt-4 flex flex-wrap items-center justify-center gap-3 text-xs sm:text-sm opacity-95">
 								<span className="hidden sm:inline-flex items-center gap-2"><Landmark className="h-4 w-4" />Center for Quantitative Finance, National University of Singapore</span>
 							</div>
-							<div className="mt-6 sm:mt-8">
+							<div className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
 								<a href="https://forms.office.com/r/MaeztkxuPD" target="_blank" rel="noreferrer">
-									<Button size="lg" className="w-full sm:w-auto rounded-full bg-accent text-accent-foreground transition-colors shadow-md hover:bg-accent/90 hover:shadow-lg cursor-pointer">Call for Invited Sessions</Button>
+									<Button
+										size="lg"
+										className="w-full sm:w-auto rounded-full bg-accent text-accent-foreground transition-colors shadow-md hover:bg-accent/90 hover:shadow-lg cursor-pointer"
+									>
+										Call for Invited Sessions
+									</Button>
+								</a>
+								<a
+									href="https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&FormId=Xu-lWwkxd06Fvc_rDTR-ggvMrAZJ1BhIilC9INMxyuBUMVhWQU9HVERNT0lURDVGVlY4SzlUSURHNS4u&Token=fa1101c0b84f4a7eb1cec0c5029cf516"
+									target="_blank"
+									rel="noreferrer"
+								>
+									<Button
+										size="lg"
+										variant="outline"
+										className="w-full sm:w-auto rounded-full border bg-white text-foreground transition-colors shadow-md hover:bg-muted cursor-pointer"
+									>
+										Call for Contributed Talks
+									</Button>
 								</a>
 							</div>
 						</div>
@@ -117,12 +135,12 @@ export default function Conference() {
 							<h2 className="text-2xl font-bold md:text-3xl lg:text-4xl">Registration</h2>
 							<div className="h-1 w-16 rounded bg-accent md:w-20 mx-auto" />
 						</div>
-						<div className="mt-8 grid gap-6 md:grid-cols-2">
-							<Card className="shadow-sm">
-								<CardContent className="space-y-3 p-6">
-									<div className="text-lg font-semibold">Invited Session Proposal</div>
+						<div className="mt-8 grid gap-6 md:grid-cols-3">
+							<Card className="shadow-sm h-full">
+								<CardContent className="flex h-full flex-col space-y-3 p-6">
+									<div className="text-lg font-semibold">Session Proposal</div>
 									<p className="text-sm text-muted-foreground text-justify">For prospective organizers who wish to host an invited session at QF2026. Briefly outline the session theme, motivation, and 4 potential speakers in your proposal.</p>
-									<div className="flex flex-wrap justify-center gap-2 pt-1">
+									<div className="mt-auto flex flex-wrap justify-center gap-2 pt-1">
 									<a
 										href="https://forms.office.com/r/MaeztkxuPD"
 										target="_blank"
@@ -143,8 +161,23 @@ export default function Conference() {
 									</div>
 								</CardContent>
 							</Card>
-							<Card className="shadow-sm">
-								<CardContent className="space-y-3 p-6">
+							<Card className="shadow-sm h-full">
+								<CardContent className="flex h-full flex-col space-y-3 p-6">
+									<div className="text-lg font-semibold">Contributed Talk</div>
+									<div className="mt-auto flex flex-wrap justify-center gap-2 pt-1">
+										<a
+											href="https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&FormId=Xu-lWwkxd06Fvc_rDTR-ggvMrAZJ1BhIilC9INMxyuBUMVhWQU9HVERNT0lURDVGVlY4SzlUSURHNS4u&Token=fa1101c0b84f4a7eb1cec0c5029cf516"
+											target="_blank"
+											rel="noreferrer"
+											className="inline-flex items-center rounded-full bg-accent px-5 py-2.5 text-sm font-medium text-accent-foreground hover:bg-accent/90 cursor-pointer"
+										>
+											Submit Now
+										</a>
+									</div>
+								</CardContent>
+							</Card>
+							<Card className="shadow-sm h-full">
+								<CardContent className="flex h-full flex-col space-y-3 p-6">
 									<div className="text-lg font-semibold">Participant Registration</div>
 									<div className="flex flex-wrap items-center gap-2 text-xs text-muted-foreground md:gap-3 md:text-sm">
 										<span className="font-medium">Conference fees:</span>
@@ -154,12 +187,14 @@ export default function Conference() {
 										<span className="inline-flex items-center rounded-full bg-muted/70 px-2 py-0.5 text-[11px] md:text-xs text-foreground">Dinner included</span>
 									</div>
 									<p className="text-sm text-muted-foreground text-justify">For general attendees (faculty, students, and industry). Registration opens soon. Currently only available for invited session proposals.</p>
-									<Button
-									disabled
-									className="inline-flex items-center rounded-full bg-muted px-5 py-2.5 text-sm font-medium text-muted-foreground cursor-not-allowed"
-								>
-									Coming Soon
-								</Button>
+									<div className="mt-auto flex justify-center pt-1">
+										<Button
+											disabled
+											className="inline-flex items-center rounded-full bg-muted px-5 py-2.5 text-sm font-medium text-muted-foreground cursor-not-allowed"
+										>
+											Coming Soon
+										</Button>
+									</div>
 								</CardContent>
 							</Card>
 						</div>
