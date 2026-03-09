@@ -1,73 +1,46 @@
-# React + TypeScript + Vite
+# Quantitative Finance Conference 2026 Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Public website for **Quantitative Finance Conference 2026** and the associated **QF2026 Summer Program** pages (Program, Summer School, Workshop).
 
-Currently, two official plugins are available:
+## Tech stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React + TypeScript + Vite
+- Tailwind CSS + shadcn/ui components
+- React Router (client-side routing)
 
-## React Compiler
+## Quick start (local)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Prerequisites: **Node.js** (recommended 18+), **npm**
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Then open the URL shown in the terminal (usually `http://localhost:5173`).
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Scripts
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev      # start dev server
+npm run build    # typecheck + production build
+npm run preview  # preview the production build locally
 ```
+
+## Pages / routes
+
+- `/` → Conference (`src/pages/Conference.tsx`)
+- `/program` → Program (`src/pages/Program.tsx`)
+- `/summer-school` → Summer School (`src/pages/SummerSchool.tsx`)
+- `/workshop` → Workshop (`src/pages/Workshop.tsx`)
+
+## Updating content
+
+- **Page content**: `src/pages/*`
+- **Keynotes**: `src/data/keynotes.ts`
+- **Organizers**: `src/data/organizers.ts`
+- **Navbar / navigation**: `src/components/navbar.tsx`
+
+## Deployment notes (SPA routing)
+
+This is a single-page app. If you deploy to static hosting, configure a fallback so **all routes serve `index.html`** (otherwise deep links like `/program` may 404).
