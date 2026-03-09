@@ -51,7 +51,7 @@ export default function Conference() {
 									</Button>
 								</a>
 								<a
-									href="https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&FormId=Xu-lWwkxd06Fvc_rDTR-ggvMrAZJ1BhIilC9INMxyuBUMVhWQU9HVERNT0lURDVGVlY4SzlUSURHNS4u&Token=fa1101c0b84f4a7eb1cec0c5029cf516"
+									href="https://forms.office.com/Pages/ResponsePage.aspx?id=Xu-lWwkxd06Fvc_rDTR-ggvMrAZJ1BhIilC9INMxyuBUMVhWQU9HVERNT0lURDVGVlY4SzlUSURHNS4u"
 									target="_blank"
 									rel="noreferrer"
 								>
