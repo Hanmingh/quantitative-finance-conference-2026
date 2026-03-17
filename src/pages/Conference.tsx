@@ -185,7 +185,7 @@ export default function Conference() {
 									<p className="text-sm font-bold">Deadline: April 12, 2026</p>
 									<div className="mt-auto flex flex-wrap justify-center gap-2 pt-1">
 										<a
-											href="https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&FormId=Xu-lWwkxd06Fvc_rDTR-ggvMrAZJ1BhIilC9INMxyuBUMVhWQU9HVERNT0lURDVGVlY4SzlUSURHNS4u&Token=fa1101c0b84f4a7eb1cec0c5029cf516"
+											href="https://forms.office.com/Pages/ResponsePage.aspx?id=Xu-lWwkxd06Fvc_rDTR-ggvMrAZJ1BhIilC9INMxyuBUMVhWQU9HVERNT0lURDVGVlY4SzlUSURHNS4u"
 											target="_blank"
 											rel="noreferrer"
 											className="inline-flex items-center rounded-full bg-accent px-5 py-2.5 text-sm font-medium text-accent-foreground hover:bg-accent/90 cursor-pointer"
