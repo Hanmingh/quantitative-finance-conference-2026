@@ -153,6 +153,7 @@ export default function Conference() {
 								<CardContent className="flex h-full flex-col space-y-3 p-6">
 									<div className="text-lg font-semibold">Session Proposal</div>
 									<p className="text-sm text-muted-foreground text-justify">For prospective organizers who wish to host an invited session at QF2026. Briefly outline the session theme, motivation, and 4 potential speakers in your proposal.</p>
+									<p className="text-sm font-bold">Deadline: April 5, 2026</p>
 									<div className="mt-auto flex flex-wrap justify-center gap-2 pt-1">
 									<a
 										href="https://forms.office.com/r/MaeztkxuPD"
