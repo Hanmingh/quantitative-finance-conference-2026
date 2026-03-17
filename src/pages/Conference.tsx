@@ -148,6 +148,7 @@ export default function Conference() {
 							<h2 className="text-2xl font-bold md:text-3xl lg:text-4xl">Registration</h2>
 							<div className="h-1 w-16 rounded bg-accent md:w-20 mx-auto" />
 						</div>
+						<p className="mx-auto max-w-2xl text-sm text-muted-foreground">	A limited number of free on-campus rooms are available for PhD students, postdocs, and junior faculty (check-in: June 6, check-out: June 13). To apply, please send your CV to{" "}	<a href="mailto:qf2026.conference@gmail.com" className="font-medium text-accent underline">qf2026.conference@gmail.com	</a>.Acceptances are given on a rolling basis, so early applications are encouraged. Successful applicants are expected to participate in the workshop on June 8–9.</p>
 						<div className="mt-8 grid gap-6 md:grid-cols-3">
 							<Card className="shadow-sm h-full">
 								<CardContent className="flex h-full flex-col space-y-3 p-6">
