@@ -181,6 +181,7 @@ export default function Conference() {
 								<CardContent className="flex h-full flex-col space-y-3 p-6">
 									<div className="text-lg font-semibold">Contributed Talk</div>	
 									<p className="text-sm text-muted-foreground text-justify">Acceptance notifications will be sent on a rolling basis.</p>
+									<div className="flex-grow" />
 									<p className="text-sm font-bold">Deadline: April 12, 2026</p>
 									<div className="mt-auto flex flex-wrap justify-center gap-2 pt-1">
 										<a
