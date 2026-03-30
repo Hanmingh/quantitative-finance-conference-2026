@@ -36,10 +36,10 @@ export default function Footer() {
                 Programme contact:
               </span>{' '}
               <a
-                href="mailto:cy.goh@nus.edu.sg"
+                href="mailto:sherminl@nus.edu.sg"
                 className="underline-offset-2 hover:text-accent hover:underline"
               >
-                cy.goh@nus.edu.sg
+                sherminl@nus.edu.sg
               </a>
             </p>
           </div>
