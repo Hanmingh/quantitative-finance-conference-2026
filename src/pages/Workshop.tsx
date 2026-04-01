@@ -65,6 +65,7 @@ export default function Workshop() {
 						<div className="mx-auto mt-8 max-w-3xl space-y-4 text-sm leading-relaxed text-muted-foreground md:text-base text-justify">
 							<p>The QF Workshop provides focused sessions on specialized topics in quantitative finance. It offers an excellent opportunity for researchers and practitioners to engage in in-depth discussions and collaborative problem-solving.</p>
 							<p>The workshop will feature invited presentations and interactive sessions designed to foster knowledge exchange and networking among participants.</p>
+							<p>Registration for Workshop only:</p>
 						</div>
 					</div>
 				</section>
