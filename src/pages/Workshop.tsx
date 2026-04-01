@@ -66,6 +66,11 @@ export default function Workshop() {
 							<p>The QF Workshop provides focused sessions on specialized topics in quantitative finance. It offers an excellent opportunity for researchers and practitioners to engage in in-depth discussions and collaborative problem-solving.</p>
 							<p>The workshop will feature invited presentations and interactive sessions designed to foster knowledge exchange and networking among participants.</p>
 							<p>Registration for Workshop only:</p>
+							<div className="mt-6 sm:mt-8">
+								<a href="https://forms.office.com/pages/responsepage.aspx?id=Xu-lWwkxd06Fvc_rDTR-glpST3DWaXhCv1ms4wwV109UMUNEVkpVMjE0NEZEUDRaWU85UjEyNTlMOCQlQCN0PWcu&route=shorturl" target="_blank" rel="noreferrer">
+								<Button size="lg" className="w-full sm:w-auto rounded-full bg-accent text-accent-foreground transition-colors shadow-md hover:bg-accent/90 hover:shadow-lg cursor-pointer">Register</Button>
+								</a>
+							</div>
 						</div>
 					</div>
 				</section>
