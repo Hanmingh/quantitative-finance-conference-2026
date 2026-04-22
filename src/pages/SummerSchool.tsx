@@ -62,7 +62,7 @@ export default function SummerSchool() {
 						<div className="mx-auto max-w-xl text-center text-white sm:max-w-3xl lg:max-w-5xl">
 							<h1 className="text-xl font-bold leading-tight sm:text-3xl md:text-4xl lg:text-5xl drop-shadow-lg">Summer School</h1>
 							<p className="mt-3 text-sm sm:text-base md:text-lg lg:text-xl drop-shadow-md">2–5 June 2026 · Singapore</p>
-							<p className="mt-2 text-sm sm:text-base font-bold drop-shadow-md">Acceptances for participation and room allocation (if required) are provided on a rolling basis, so early application is encouraged.</p>
+							<p className="mt-2 text-sm sm:text-base font-bold drop-shadow-md">Participation applications are reviewed on a rolling basis. All accommodation support has already been allocated, so new applications are for participation only and do not include accommodation support.</p>
 							<div className="mt-4 flex flex-wrap items-center justify-center gap-3 text-xs sm:text-sm opacity-95">
 								<span className="hidden sm:inline-flex items-center gap-2"><Landmark className="h-4 w-4" />Center for Quantitative Finance X Institute for Mathematical Sciences, NUS</span>
 							</div>
