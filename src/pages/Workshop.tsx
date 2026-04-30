@@ -17,6 +17,7 @@ const workshopSpeakers = [
 	{ name: "Mathieu Laurière", affiliation: "NYU Shanghai" },
 	{ name: "Xiaolu Tan", affiliation: "The Chinese University of Hong Kong" },
 	{ name: "Hao Xing", affiliation: "Boston University Questrom" },
+	{ name: "Rama Cont", affiliation: "University of Oxford" },
 ]
 
 export default function Workshop() {
