@@ -41,28 +41,15 @@ export default function Conference() {
 										Register
 									</Button>
 								</a>
-								<a href="https://forms.office.com/r/MaeztkxuPD" target="_blank" rel="noreferrer">
-									<Button
-										size="lg"
-										variant="outline"
-										className="w-[min(420px,100%)] rounded-full border bg-white text-foreground transition-colors shadow-md hover:bg-muted cursor-pointer"
-									>
-										Call for Invited Sessions
-									</Button>
-								</a>
-								<a
-									href="https://forms.office.com/Pages/ResponsePage.aspx?id=Xu-lWwkxd06Fvc_rDTR-ggvMrAZJ1BhIilC9INMxyuBUMVhWQU9HVERNT0lURDVGVlY4SzlUSURHNS4u"
-									target="_blank"
-									rel="noreferrer"
-								>
-									<Button
-										size="lg"
-										variant="outline"
-										className="w-[min(420px,100%)] rounded-full border bg-white text-foreground transition-colors shadow-md hover:bg-muted cursor-pointer"
-									>
-										Call for Contributed Talks
-									</Button>
-								</a>
+					          <a
+					            href="/QFConference2026.pdf"
+					            target="_blank"
+					            rel="noreferrer"
+					          >
+					             <Button size="lg" className="w-full sm:w-auto rounded-full bg-accent text-accent-foreground transition-colors shadow-md hover:bg-accent/90 hover:shadow-lg cursor-pointer">
+					              View Preliminary Conference Programme
+					            </Button>
+					          </a>
 							</div>
 						</div>
 					</div>
